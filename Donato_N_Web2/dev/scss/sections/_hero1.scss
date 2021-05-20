@@ -1,0 +1,16 @@
+/*============
+    Hero
+============*/
+#hero{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: ". hero .";
+    
+
+    @include md{
+        grid-template-columns: auto 1fr;
+    }
+
+
+    }
+    

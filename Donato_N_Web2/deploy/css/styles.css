@@ -352,6 +352,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -385,3 +393,78 @@ textarea {
 /* =============
     Footer
 ============= */
+/*============
+    Basics
+============*/
+#basics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+  gap: 20px;
+}
+
+/*==============
+    Essentails
+===============*/
+#essentials {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#essentials div {
+  grid-template-columns: auto 50%;
+}
+
+/*============
+    Hero
+============*/
+#hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: ". hero .";
+}
+@media (min-width: 768px) {
+  #hero {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+/*===============
+    House Plants
+===============*/
+#houseplant {
+  display: grid;
+}
+#houseplant div {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*===============
+    Inspiration
+===============*/
+#inspiration {
+  display: grid;
+}
+#inspiration div {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*===============
+    Shade Plants
+===============*/
+#shadeplants div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+  gap: 20px;
+}
+
+/*===============
+    Hero Image
+================*/
+#heroimage {
+  display: grid;
+  grid-template-columns: auto;
+}
+#heroimage img {
+  width: 100%;
+}

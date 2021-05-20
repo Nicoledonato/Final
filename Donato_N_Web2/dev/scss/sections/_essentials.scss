@@ -1,0 +1,11 @@
+/*==============
+    Essentails
+===============*/
+#essentials{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    div{
+        grid-template-columns: auto 50%;
+    }
+}
