@@ -4,8 +4,15 @@
 ul{
     margin: 0;
     padding: 0;
-
     li{
         list-style: none;
+    }
+}
+
+.content{
+    margin-bottom: 24px;
+
+    @include md{
+        margin-bottom: 48px;
     }
 }
