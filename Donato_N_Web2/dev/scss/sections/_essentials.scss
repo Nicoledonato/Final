@@ -6,9 +6,35 @@
     margin-right: 20px;
     margin-left: 20px;
 
-    div{
-        ul{
-        grid-template-columns: 5fr 2fr;
-        }
+    @include md{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-areas: 
+        "e1 e1 e1 e1"
+        "e2 e2 e2 e3"
+        "e5 e4 e4 e4"
+        "e6 e6 e6 e7";
+    }
+
+    #e1{
+        grid-area: e1;
+    }
+    #e2{
+        grid-area: e2;
+    }
+    #e3{
+        grid-area: e3;
+    }
+    #e4{
+        grid-area: e4;
+    }
+    #e5{
+        grid-area: e5;
+    }
+    #e6{
+        grid-area: e6;
+    }
+    #e7{
+        grid-area: e7;
     }
 }

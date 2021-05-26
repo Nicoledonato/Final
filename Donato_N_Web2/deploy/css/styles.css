@@ -438,8 +438,33 @@ textarea {
   margin-right: 20px;
   margin-left: 20px;
 }
-#essentials div ul {
-  grid-template-columns: 5fr 2fr;
+@media (min-width: 768px) {
+  #essentials {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: "e1 e1 e1 e1" "e2 e2 e2 e3" "e5 e4 e4 e4" "e6 e6 e6 e7";
+  }
+}
+#essentials #e1 {
+  grid-area: e1;
+}
+#essentials #e2 {
+  grid-area: e2;
+}
+#essentials #e3 {
+  grid-area: e3;
+}
+#essentials #e4 {
+  grid-area: e4;
+}
+#essentials #e5 {
+  grid-area: e5;
+}
+#essentials #e6 {
+  grid-area: e6;
+}
+#essentials #e7 {
+  grid-area: e7;
 }
 
 /*============
