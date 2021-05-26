@@ -2,7 +2,8 @@
     Hero Image
 ================*/
 #heroimage{
-    display: grid;
-    grid-template-columns: auto;
-    img{ width: 100%;}
+    background-image: url(".../img/hero1/hero.jpg");
+    background-size: cover;
+    height: 755px;
+
 }

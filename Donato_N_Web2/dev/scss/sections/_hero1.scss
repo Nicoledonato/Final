@@ -3,14 +3,9 @@
 ============*/
 #hero{
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: ". hero .";
-    
-
-    @include md{
-        grid-template-columns: auto 1fr;
-    }
-
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 7fr 3fr;
 
     }
     

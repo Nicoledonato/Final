@@ -398,9 +398,36 @@ textarea {
 ============*/
 #basics {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin: 20px;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  #basics {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "b1 b1 ." "b2 b3 b4" "b5 b6 b7";
+  }
+}
+#basics #b1 {
+  grid-area: b1;
+}
+#basics #b2 {
+  grid-area: b2;
+}
+#basics #b3 {
+  grid-area: b3;
+}
+#basics #b4 {
+  grid-area: b4;
+}
+#basics #b5 {
+  grid-area: b5;
+}
+#basics #b6 {
+  grid-area: b6;
+}
+#basics #b7 {
+  grid-area: b7;
 }
 
 /*==============
@@ -408,10 +435,11 @@ textarea {
 ===============*/
 #essentials {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-#essentials div {
-  grid-template-columns: auto 50%;
+#essentials div ul {
+  grid-template-columns: 5fr 2fr;
 }
 
 /*============
@@ -419,13 +447,9 @@ textarea {
 ============*/
 #hero {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: ". hero .";
-}
-@media (min-width: 768px) {
-  #hero {
-    grid-template-columns: auto 1fr;
-  }
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-template-columns: 7fr 3fr;
 }
 
 /*===============
@@ -433,9 +457,48 @@ textarea {
 ===============*/
 #houseplant {
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-#houseplant div {
-  grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 768px) {
+  #houseplant {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "e1 . ." "e2 e2 ." "e3 e4 e5" "e6 e7 e8" "e9 e10 e11";
+  }
+}
+#houseplant #e1 {
+  grid-area: e1;
+}
+#houseplant #e2 {
+  grid-area: e2;
+}
+#houseplant #e3 {
+  grid-area: e3;
+}
+#houseplant #e4 {
+  grid-area: e4;
+}
+#houseplant #e5 {
+  grid-area: e5;
+}
+#houseplant #e6 {
+  grid-area: e6;
+}
+#houseplant #e7 {
+  grid-area: e7;
+}
+#houseplant #e8 {
+  grid-area: e8;
+}
+#houseplant #e9 {
+  grid-area: e9;
+}
+#houseplant #e10 {
+  grid-area: e10;
+}
+#houseplant #e11 {
+  grid-area: e11;
 }
 
 /*===============
@@ -443,28 +506,66 @@ textarea {
 ===============*/
 #inspiration {
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-#inspiration div {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+@media (min-width: 768px) {
+  #inspiration {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: " i1 i1 i1 i1" "i2 i3 i4 i5";
+  }
+}
+#inspiration #i1 {
+  grid-area: i1;
+}
+#inspiration #i2 {
+  grid-area: i2;
+}
+#inspiration #i3 {
+  grid-area: i3;
+}
+#inspiration #i4 {
+  grid-area: i4;
+}
+#inspiration #i5 {
+  grid-area: i5;
 }
 
 /*===============
     Shade Plants
 ===============*/
-#shadeplants div {
+#shadeplants {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  #shadeplants {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "s1 s1 s1" "s2 s3 s4";
+  }
+}
+#shadeplants #s1 {
+  grid-area: s1;
+}
+#shadeplants #s2 {
+  grid-area: s2;
+}
+#shadeplants #s3 {
+  grid-area: s3;
+}
+#shadeplants #s5 {
+  grid-area: s5;
 }
 
 /*===============
     Hero Image
 ================*/
 #heroimage {
-  display: grid;
-  grid-template-columns: auto;
-}
-#heroimage img {
-  width: 100%;
+  background-image: url(".../img/hero1/hero.jpg");
+  background-size: cover;
+  height: 755px;
 }

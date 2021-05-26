@@ -148,11 +148,24 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/hero1\/hero.png" : {
-      "ft" : 32768,
-      "iS" : 1885435,
+    "\/deploy\/img\/hero1\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 2576581,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero1\/hero.png",
+      "oAP" : "\/deploy\/img\/hero1\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/houseplant\/houseplant1.png" : {
+      "ft" : 32768,
+      "iS" : 154843,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/houseplant\/houseplant1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -179,19 +192,6 @@
       "iS" : 188868,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/houseplant\/houseplant3.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/houseplant\/housplant1.png" : {
-      "ft" : 32768,
-      "iS" : 154843,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/houseplant\/housplant1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

@@ -3,9 +3,12 @@
 ===============*/
 #essentials{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    
+    margin-right: 20px;
+    margin-left: 20px;
+
     div{
-        grid-template-columns: auto 50%;
+        ul{
+        grid-template-columns: 5fr 2fr;
+        }
     }
 }

@@ -3,7 +3,29 @@
 ===============*/
 #inspiration{
     display: grid;
-    div{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @include md{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-areas: " i1 i1 i1 i1"
+        "i2 i3 i4 i5";
+    }
+
+    #i1{
+        grid-area: i1;
+    }
+    #i2{
+        grid-area: i2;
+    }
+    #i3{
+        grid-area: i3;
+    }
+    #i4{
+        grid-area: i4;
+    }
+    #i5{
+        grid-area: i5;
+    }
 }
