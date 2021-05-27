@@ -372,6 +372,16 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Manrope", sans-serif;
+  color: #0B0201;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "playfair display", serif;
+  color: #0B0201;
+}
+
 /* =============
     Buttons
 ============= */
@@ -399,9 +409,17 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #DCE9F4;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #DCE9F4;
+}
+
 /*============
     Basics
 ============*/
